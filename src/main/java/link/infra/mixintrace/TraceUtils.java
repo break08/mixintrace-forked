@@ -11,7 +11,7 @@ import java.util.Set;
 public class TraceUtils {
 	public static void printTrace(StackTraceElement[] stackTrace, StringBuilder crashReportBuilder) {
 		if (stackTrace != null && stackTrace.length > 0) {
-			crashReportBuilder.append("\n[MixinReporter] Mixins in Stacktrace:");
+			crashReportBuilder.append("\n[MixinReporter/INFO] Mixins in Stacktrace:");
 
 			try {
 				List<String> classNames = new ArrayList<>();
@@ -57,10 +57,10 @@ public class TraceUtils {
 				}
 
 				if (!found) {
-					crashReportBuilder.append(" None found");
+					crashReportBuilder.append("[MixinReporter/INFO] None found");
 				}
 			} catch (Exception e) {
-				crashReportBuilder.append(" Failed to find Mixin metadata: ").append(e);
+				crashReportBuilder.append("[MixinReporter/ERROR] Failed to find Mixin metadata: ").append(e);
 			}
 		}
 	}
