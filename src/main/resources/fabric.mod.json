@@ -1,11 +1,11 @@
 {
 	"schemaVersion": 1,
-	"id": "mixintrace",
+	"id": "mixinreporter",
 	"version": "${version}",
-	"name": "MixinTrace",
-	"description": "Adds a list of mixins in the stack trace to crash reports",
+	"name": "MixinReporter",
+	"description": "A fork of MixinTrace. Adds a list of mixins in the stack trace to crash reports (Credit to comp500)",
 	"authors": [
-		"comp500"
+		"break08"
 	],
 	"contact": {
 		"homepage": "https://modrinth.com/mod/mixintrace",

@@ -11,7 +11,7 @@ import java.util.Set;
 public class TraceUtils {
 	public static void printTrace(StackTraceElement[] stackTrace, StringBuilder crashReportBuilder) {
 		if (stackTrace != null && stackTrace.length > 0) {
-			crashReportBuilder.append("\nMixins in Stacktrace:");
+			crashReportBuilder.append("\n[MixinReporter] Mixins in Stacktrace:");
 
 			try {
 				List<String> classNames = new ArrayList<>();
