@@ -4,7 +4,7 @@ This is a Fabric mod that adds a list of mixins (and Mixin configuration names) 
 Example output:
 
 ```
-	Mixins in Stacktrace: 
+	[MixinReporter/INFO] Mixins in Stacktrace: 
 		net.minecraft.class_465:
 			dev.emi.bunchotrinkets.mixin.AbstractContainerScreenMixin (bunchotrinkets.mixins.json)
 			net.backslot.mixin.HandledScreenMixin (backslot.mixins.json)
