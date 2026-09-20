@@ -1,5 +1,5 @@
 # MixinTrace
-This is a Fabric mod that adds a list of mixins (and Mixin configuration names) to classes in the stack trace to crash reports. 
+This is a mod that adds a list of mixins (and Mixin configuration names) to classes in the stack trace to crash reports. 
 
 Example output:
 
@@ -24,5 +24,3 @@ Example output:
 			net.fabricmc.fabric.mixin.registry.sync.client.MixinMinecraftClient (fabric-registry-sync-v0.mixins.json)
 			dev.emi.bunchotrinkets.mixin.MinecraftClientMixin (bunchotrinkets.mixins.json)
 ```
-
-Tested on Minecraft 1.16.2 and 1.16.1, but is likely to work on many different versions.
