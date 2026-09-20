@@ -25,6 +25,7 @@ public abstract class MixinCrashReport {
 			crashReportBuilder.deleteCharAt(crashReportBuilder.length() - 1);
 			trailingNewlineCount++;
 		}
+
 		TraceUtils.printTrace(uncategorizedStackTrace, crashReportBuilder);
 		crashReportBuilder.append("\n".repeat(trailingNewlineCount));
 	}
