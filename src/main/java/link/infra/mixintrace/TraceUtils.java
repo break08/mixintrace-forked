@@ -3,6 +3,7 @@ package link.infra.mixintrace;
 import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
 import org.spongepowered.asm.mixin.transformer.ClassInfo;
 
+import javax.swing.*;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
@@ -54,6 +55,15 @@ public class TraceUtils {
 							found = true;
 						}
 					}
+				}
+
+				if (found){
+					JOptionPane.showMessageDialog(
+							null,
+							"This is an information message",
+							"MixinReporter",
+							JOptionPane.ERROR_MESSAGE
+					);
 				}
 
 				if (!found) {
